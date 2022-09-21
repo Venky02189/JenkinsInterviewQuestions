@@ -1,11 +1,167 @@
-Q1. What is Jenkins?
-Q2. What is Jenkins used for?
-Q3. Which architecture is recommended for a scalable Jenkins environment?
-Q4. How to add a user in Jenkins?
-Q5. What is Jenkins Pipeline?
-Q6. What is Jenkinsfile?
-Q7. What is continuous integration in Jenkins?
-Q8. How to change port for Jenkins?
-Q9. What are the software prerequisites that must be met before Jenkins is installed?
-Q10. How to configure and use third-party tools in Jenkins?
-yet to add
+1. What is Jenkins?
+    Jenkins is an open-source free automation tool used to build and test software projects. The tool makes it painless for developers to integrate changes to the         project. Jenkins' primary focus is to keep track of the version control system and initiate and monitor a build system if there are any changes. It keeps an eye on      the entire process and provides reports and notifications to alert.
+
+
+2. What are the features of Jenkins?
+    Some of the crucial features of Jenkins are the following:
+      •	It is a free and open-source automation tool
+        •	Jenkins provides a vast number of plugins
+      •	It is easy to set up and install on multiple operating systems
+      •	Provides pipeline support
+    •	Fast release cycles 
+      •	Easy upgrades
+
+
+3. What is Groovy in Jenkins?
+•	Apache Groovy is a dynamic object-oriented programming language used as a scripting language for Java platforms. 
+•	Groovy is used to orchestrate the Jenkins pipeline and enables different teams to contribute to the work in different languages. 
+•	Groovy's syntax is very similar to that of Java, making it more seamless with the Java interface. 
+•	The language has several features like Java compatibility and Development support.
+
+
+4. How do you install Jenkins?
+Follow the steps mentioned below to install Jenkins:
+•	Install Java 
+•	Install Apache Tomcat Server
+•	Download Jenkins war File
+•	Deploy Jenkins war File
+
+
+5. Which commands can be used to begin Jenkins?
+Here are the commands used to start Jenkins:
+•	Open the command prompt
+•	After the command prompt opens, browse to the directory where Jenkins war is present
+•	Then run the following command:
+D:\>Java -jar Jenkins.war
+
+
+6. What is "Continuous Integration" with reference to Jenkins?
+•	Continuous Integration is a development practice where the codes can be integrated into a shared repository. 
+•	The practice uses automated verifications for the early detection of code problems. 
+•	Continuous Integration triggers the build to find and identify bugs present in the code.
+•	It adds consistency to the build process.
+•	It’s a means to build things faster and prevents broken code.
+
+
+7. What is a CI/CD pipeline?
+CI/CD Pipeline or Continuous Integration/ Continuous Delivery is considered the DevOps approach's backbone. The pipeline is responsible for building codes, running tests, and deploying new software versions.
+
+
+8. What is a Jenkins pipeline?
+•	The pipeline represents the continuous delivery and continuous integration of all the jobs in the SDLC and DevOps life cycle. 
+•	The Jenkins pipeline is a set of plugins that support implementation and integration of continuous delivery pipelines into Jenkins. It connects this pipeline in a particular format by Jenkins.
+•	The Jenkins pipeline solves several problems like the maintenance of thousands of jobs and maintaining deployment with needing to resort to other powerful methods.
+
+
+9. Name the three different types of pipelines in Jenkins?
+The three different types of Jenkins pipelines are:
+•	CI/CD pipeline 
+•	Scripted pipeline
+•	Declarative pipeline
+
+
+10. How can you set up a Jenkins job?
+To set up a Jenkins job, you may follow these steps:
+•	Select New item from the menu
+•	Next, enter a name for the job and select a free-style job
+•	Click on OK to create a new job
+•	Hence, the next page that appears will allow you to configure your job.
+
+
+11. What are the requirements for using Jenkins?
+To use Jenkins, you require the following:
+•	A source code repository that can be accessed, for example, a Git repository.
+•	A build script, for example, a Maven script.
+
+
+12. Name the two components that Jenkins is mostly integrated with.
+Jenkins is typically integrated with these two components:
+1.	Version Control systems like Git and SVN (Apache Subversion)
+2.	Build tools like Maven 
+
+
+13. Name some of the useful plugins in Jenkins.
+Some of the plugins in Jenkins include:
+•	Maven 2 project
+•	Amazon EC2
+•	Copy artifact
+•	Join
+•	HTML publisher
+•	Green Balls
+
+
+14. How can you create a backup and copy files in Jenkins?
+•	Jenkins stores all the settings, builds scripts, and logs in the home directory. 
+•	Then, if you want to create a backup of this Jenkins set up all you have to do is copy this directory. 
+•	The job directory may also be copied to clone a job or rename the directory.
+
+
+15. How can you deploy a custom build of a core plugin?
+If you wish to deploy a custom build of a core plugin, you follow the following steps:
+•	Stop Jenkins
+•	Then copy the custom HPI to $Jenkins_Home/plugins
+•	After that, delete the previously expanded plugin directory
+•	Next, make an empty file called <plugin>.hpi.pinned
+•	Finally, start Jenkins
+
+
+16. What could be the steps to move or copy Jenkins from one server to another?
+There are multiple ways to move or copy Jenkins from one server to another:
+•	You may move a job from one Jenkins installation to another just by copying the corresponding job directory.
+•	You may make a copy of an already existing job by making a clone of the job directory with an uncommon name.
+•	You may also just rename a current job by renaming a directory.
+
+
+17. Name some more continuous Integration tools other than Jenkins.
+Some of the top continuous integration tools other than Jenkins are:
+•	TeamCity
+•	Travis CI
+•	Go CD
+•	Bamboo
+•	GitLab CI
+•	CircleCI
+•	Codeship
+
+
+18. Assume that you have a pipeline. The first job that you performed was successful, but the second one failed.  What would you do now?
+You don't have to worry, and you just have to restart the pipeline from the point where it failed by doing 'restart from stage.'
+
+
+19. Explain the process in which Jenkins works?
+Here’s the process in which Jenkins works:
+•	Jenkins checks changes in repositories regularly, and developers must secure their code regularly. 
+•	Once the changes are defined, Jenkins detects them and uses them to prepare a new build.
+•	After that, Jenkins will transverse through various stages in its usual pipeline. As one stage completes, the process will move further on to the next stage.
+•	If a stage fails, the Jenkins build will stop there, and the software will email the team using it. When completed successfully, the code implements itself in the proper server so that testing begins.
+•	After the successful testing phase, Jenkins shares the results with the team using it.
+
+
+20. What is Jenkinsfile? 
+Jenkins file is a text file that has a definition of a Jenkins pipeline and is checked into the source control repository. It enables code review and iteration on the pipeline. It also permits an audit trail for the pipeline.
+
+
+21. Differentiate between Maven, Ant, and Jenkins.
+Maven	ANT	Jenkins
+
+1.	Build tool
+2.	Perform build operations 	
+
+1.	Build tool
+2.	Perform build operations 	
+
+1.	Continuous Integration tool
+2.	Jenkins may run unit tests and deploy applications
+
+
+22. What is the process to integrate Git with Jenkins?
+To integrate Git with Jenkins, you can follow the following steps:
+•	First, create a new Jenkins job and open the Jenkins dashboard.
+•	Now, enter the desired project name and select the job type. 
+•	Click on OK.
+•	Then enter the project information. 
+•	After that, visit the 'Source Code Management' tab. 
+•	If the Git plugin is pre-installed in Jenkins, there will be 'Git'.
+•	If it is not installed, you must reinstall the plugins (GitHub plugin, GitHub Branch Source plugin, GitHub API plugin, Git client plugin, etc.).
+•	After we install the plugins, restart Jenkins.
+•	To check if Git is installed, you can go to Command Prompt and type Git, and you would see various options like usage, version, help, etc.
+
